@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text To Emoji</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div id="heading">
+        <h1>Text</h1>
+        <i class="ri-arrow-right-line"></i>
+        <h1>Emojis</h1>
+      </div>
+      <div id="box">
+        <div id="eandd">
+          <div class="enc">
+            <h3>
+              <span><i class="ri-lock-line"></i></span>Encrypt Text
+            </h3>
+          </div>
+          <div class="dec">
+            <h3>
+              <span><i class="ri-lock-unlock-line"></i></span>Decrypt Text
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="encryption">
+          <h5>1. Type a message</h5>
+          <textarea
+            placeholder="Hello World or write some javascript code"
+            id="encryinput"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <h5>2. Set a password</h5>
+          <textarea placeholder="Eg. 1234" id="encryinput" class="password" cols="30" rows="10"></textarea>
+          <h5>3. Encrypt message</h5>
+          <button id="btn" class="enbtn"><i class="ri-lock-line"> Encrypt Text</i></button>
+        </div>
+        <div id="decryption">
+            <h5>1. Paste encrypted emojis</h5>
+          <textarea
+            placeholder="Hello World or write some javascript code"
+            id="decryinput"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <h5>2. Type the password</h5>
+          <textarea placeholder="Eg. 1234" id="decryinput" cols="30" rows="10"></textarea>
+          <h5>3. Decrypt Emojis</h5>
+          <button id="btn" class="debtn"><i class="ri-lock-line"> Encrypt Text</i></button>
+        </div>
+      </div>
+      <div id="outerresult">
+        <div id="result">
+
+        </div>
+      </div>
+      <div id="footer">
+        <h5>Created By Mohammed Aamer ❤️</h5>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
